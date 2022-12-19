@@ -1,7 +1,7 @@
 {
   "name": "rdbi/laravel-cms",
   "description": "RDBI Laravel CMS Boilerplate",
-  "version": "0.0.4-alpha",
+  "version": "0.0.5-alpha",
   "require": {
     "php": "^8.0.0",
     "filament/filament": "^2.0",
@@ -11,9 +11,7 @@
   },
   "scripts": {
     "post-update-cmd": [
-      "@php artisan filament:upgrade",
-      "@php artisan vendor:publish --tag=rdbi-config",
-      "@php artisan migrate"
+      "@php artisan filament:upgrade"
     ]
   },
   "autoload": {
