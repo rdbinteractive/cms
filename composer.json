@@ -1,0 +1,29 @@
+{
+  "name": "rdbi/laravel-cms",
+  "description": "RDBI Laravel CMS Boilerplate",
+  "version": "0.0.1",
+  "require": {
+    "php": "^8.0.0",
+    "filament/filament": "^2.0",
+    "filament/spatie-laravel-media-library-plugin": "^2.0",
+    "filament/spatie-laravel-settings-plugin": "^2.0",
+    "laravel/framework": "^9.19"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan filament:upgrade"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "RDBI\\CMS\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RDBI\\CMS\\CMSServiceProvider"
+      ]
+    }
+  }
+}
