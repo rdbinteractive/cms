@@ -50,9 +50,20 @@ class CMSServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/Models/User.php' => app_path('Models/User.php'),
-            __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
             __DIR__.'/config/filament.php' => config_path('filament.php'),
             __DIR__.'/config/settings.php' => config_path('settings.php'),
         ], 'rdbi-config');
+
+        $this->publishes([
+            __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
+        ], 'rdbi-dev-seeds');
+
+        $this->publishes([
+                __DIR__ . '/build/filament.css' => resource_path('css/filament.css'),
+                __DIR__ . '/build/package.json' => base_path('package.json'),
+                __DIR__ . '/build/postcss.config.js' => base_path('postcss.config.js'),
+                __DIR__ . '/build/tailwind.config.js' => base_path('tailwind.config.js'),
+                __DIR__ . '/build/webpack.mix.js' => base_path('webpack.mix.js'),
+        ], 'rdbi-build');
     }
 }
