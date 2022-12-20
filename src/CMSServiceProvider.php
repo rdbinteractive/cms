@@ -56,6 +56,8 @@ class CMSServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
+            __DIR__.'/Factories/PublicationTypeFactory.php' => database_path('factories/PublicationTypeFactory.php'),
+            __DIR__.'/Factories/PublicationFactory.php' => database_path('factories/PublicationFactory.php'),
             __DIR__.'/Seeders/PublicationTypeSeeder.php' => database_path('seeders/PublicationTypeSeeder.php'),
             __DIR__.'/Seeders/PublicationSeeder.php' => database_path('seeders/PublicationSeeder.php'),
         ], 'rdbi-dev-seeds');
