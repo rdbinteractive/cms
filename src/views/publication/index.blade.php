@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('rdbi-cms::layouts.app')
 @section('title', 'Archive')
 @section('content')
 @foreach($publications as $publication)

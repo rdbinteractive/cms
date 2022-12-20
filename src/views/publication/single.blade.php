@@ -1,5 +1,5 @@
 @section('title', $publication->title)
-@extends('layouts.app')
+@extends('rdbi-cms::layouts.app')
 
 @section('content')
 {{$publication->title}}
