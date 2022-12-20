@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace RDBI\CMS\Factories;
 
 use RDBI\CMS\Models\PublicationType;
 use Illuminate\Database\Eloquent\Factories\Factory;

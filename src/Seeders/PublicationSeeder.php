@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace RDBI\CMS\Seeders;
 
 use RDBI\CMS\Models\Publication;
 use Illuminate\Database\Seeder;
