@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\Seeders;
+namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        \RDBI\CMS\Models\CMSUser::factory()->create([
+        \App\Models\User::factory()->create([
             'name' => 'rob',
             'email' => 'rob@bardall.net',
             'password' => 'adminadmin',

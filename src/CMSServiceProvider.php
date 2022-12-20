@@ -49,6 +49,9 @@ class CMSServiceProvider extends ServiceProvider
         include __DIR__ . '/routes.php';
 
         $this->publishes([
+            __DIR__.'/Models/User.php' => app_path('Models/User.php'),
+            __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
+            __DIR__.'/Factories/UserFactory.php' => database_path('factories/UserFactory.php'),
             __DIR__.'/config/filament.php' => config_path('filament.php'),
             __DIR__.'/config/settings.php' => config_path('settings.php'),
         ], 'rdbi-config');
