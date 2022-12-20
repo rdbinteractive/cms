@@ -50,6 +50,8 @@ class CMSServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/Models/User.php' => app_path('Models/User.php'),
+            __DIR__.'/Models/PublicationType.php' => app_path('Models/PublicationType.php'),
+            __DIR__.'/Models/Publication.php' => app_path('Models/Publication.php'),
             __DIR__.'/config/filament.php' => config_path('filament.php'),
             __DIR__.'/config/settings.php' => config_path('settings.php'),
         ], 'rdbi-config');
