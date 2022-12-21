@@ -3,6 +3,8 @@
 namespace RDBI\CMS\Filament\Resources;
 
 use Closure;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\TextColumn;
 use RDBI\CMS\Filament\Resources\PublicationTypeResource\Pages;
 use RDBI\CMS\Filament\Resources\PublicationTypeResource\RelationManagers;
 use RDBI\CMS\Models\PublicationType;
