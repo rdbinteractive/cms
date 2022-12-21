@@ -1,34 +1,34 @@
 {
-    "autoload": {
-        "psr-4": {
-            "RDBI\\CMS\\": "src",
-            "Tests\\": "tests"
-        }
-    },
-    "description": "RDBI Laravel CMS Boilerplate",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "RDBI\\CMS\\CMSServiceProvider"
-            ]
-        }
-    },
-    "name": "rdbi/laravel-cms",
-    "require": {
-        "php": "^8.0.0",
-        "filament/filament": "^2.0",
-        "filament/spatie-laravel-media-library-plugin": "^2.0",
-        "filament/spatie-laravel-settings-plugin": "^2.0",
-        "laravel/framework": "^9.19"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^7.16",
-        "phpunit/phpunit": "^9.5"
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "@php vendor/bin/testbench package:discover --ansi"
-        ]
-    },
-    "version": "0.0.15-alpha"
+  "name": "rdbi/laravel-cms",
+  "description": "RDBI Laravel CMS Boilerplate",
+  "version": "0.0.16-alpha",
+  "require": {
+    "php": "^8.0.0",
+    "filament/filament": "^2.0",
+    "filament/spatie-laravel-media-library-plugin": "^2.0",
+    "filament/spatie-laravel-settings-plugin": "^2.0",
+    "laravel/framework": "^9.19"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.16",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "RDBI\\CMS\\": "src",
+      "Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RDBI\\CMS\\CMSServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php vendor/bin/testbench package:discover --ansi"
+    ]
+  }
 }
