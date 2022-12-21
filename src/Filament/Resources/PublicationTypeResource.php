@@ -7,6 +7,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use RDBI\CMS\Filament\Resources\PublicationTypeResource\Pages;
 use RDBI\CMS\Filament\Resources\PublicationTypeResource\RelationManagers;
+use RDBI\CMS\Filament\Resources\PublicationTypeResource\RelationManagers\PublicationsRelationManager;
 use RDBI\CMS\Models\PublicationType;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -58,7 +59,7 @@ class PublicationTypeResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            PublicationsRelationManager::class
         ];
     }
 
