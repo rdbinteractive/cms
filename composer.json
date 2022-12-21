@@ -30,5 +30,5 @@
             "@php vendor/bin/testbench package:discover --ansi"
         ]
     },
-    "version": "0.0.14-alpha"
+    "version": "0.0.15-alpha"
 }
