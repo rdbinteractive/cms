@@ -36,28 +36,30 @@ class CMSServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Filament::serving(function () {
-        //     // Register the RDBI Filament Theme.
-        //     Filament::registerTheme(
-        //         mix('css/filament.css'),
-        //     );
-        // });
-
         /**
          * Include Routes
          */
         include __DIR__ . '/routes.php';
 
+        /**
+         * Publish Required Configuration
+         */
         $this->publishes([
             __DIR__.'/Models/User.php' => app_path('Models/User.php'),
             __DIR__.'/config/filament.php' => config_path('filament.php'),
             __DIR__.'/config/settings.php' => config_path('settings.php'),
         ], 'rdbi-config');
 
+        /**
+         * Publish User Seeder
+         */
         $this->publishes([
             __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
         ], 'rdbi-dev-seeds');
 
+        /**
+         * Publish script/style build files and configurations.
+         */
         $this->publishes([
                 __DIR__ . '/build/filament.css' => resource_path('css/filament.css'),
                 __DIR__ . '/build/package.json' => base_path('package.json'),
