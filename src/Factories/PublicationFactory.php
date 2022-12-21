@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class PublicationFactory extends Factory
 {
+    protected $model = Publication::class;
+
     /**
      * Define the model's default state.
      *
@@ -25,5 +27,10 @@ class PublicationFactory extends Factory
             'layout' => 'page_builder',
             'is_published' => true,
         ];
+    }
+
+    protected static function newFactory(): PublicationFactory
+    {
+        return PublicationFactory::new();
     }
 }

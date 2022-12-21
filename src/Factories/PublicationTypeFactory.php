@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
  */
 class PublicationTypeFactory extends Factory
 {
+    protected $model = PublicationType::class;
+
     /**
      * Define the model's default state.
      *
