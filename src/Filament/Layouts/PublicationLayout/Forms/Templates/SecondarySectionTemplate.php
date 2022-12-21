@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Layouts\PublicationLayout\Forms\Templates;
+namespace RDBI\CMS\Filament\Layouts\PublicationLayout\Forms\Templates;
 
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Toggle;

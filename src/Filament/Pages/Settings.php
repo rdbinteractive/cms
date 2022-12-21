@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Pages;
+namespace RDBI\CMS\Filament\Pages;
 
 use App\Settings\GlobalSettings;
 use Filament\Forms\Components\TextInput;

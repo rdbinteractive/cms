@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Layouts\PublicationLayout\Forms;
+namespace RDBI\CMS\Filament\Layouts\PublicationLayout\Forms;
 
 use Filament\Forms\Components\Tabs;
 use Filament\Resources\Form;

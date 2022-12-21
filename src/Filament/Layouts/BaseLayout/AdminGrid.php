@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Layouts\BaseLayout;
+namespace RDBI\CMS\Filament\Layouts\BaseLayout;
 
 use Filament\Forms\Components\Grid;
 

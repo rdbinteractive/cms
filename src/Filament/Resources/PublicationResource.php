@@ -2,6 +2,8 @@
 
 namespace RDBI\CMS\Filament\Resources;
 
+use RDBI\CMS\FIlament\Layouts\PublicationLayout\Forms\PublicationEditForm;
+use RDBI\CMS\FIlament\Layouts\PublicationLayout\Tables\PublicationIndex;
 use RDBI\CMS\Models\Publication;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -19,27 +21,12 @@ class PublicationResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                //
-            ]);
+        return PublicationEditForm::make($form);
     }
 
     public static function table(Table $table): Table
     {
-        return $table
-            ->columns([
-                //
-            ])
-            ->filters([
-                //
-            ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
-            ]);
+        return PublicationIndex::make($table);
     }
 
     public static function getRelations(): array

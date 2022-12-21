@@ -1,8 +1,8 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Layouts\PublicationLayout\Forms\Templates;
+namespace RDBI\CMS\Filament\Layouts\PublicationLayout\Forms\Templates;
 
-use App\Models\PublicationType;
+use RDBI\CMS\Models\PublicationType;
 use Closure;
 use Filament\Forms\Components\Builder;
 use Filament\Forms\Components\Builder\Block;

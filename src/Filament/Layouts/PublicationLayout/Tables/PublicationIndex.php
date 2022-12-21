@@ -1,6 +1,6 @@
 <?php
 
-namespace RDBI\CMS\FIlament\Layouts\PublicationLayout\Tables;
+namespace RDBI\CMS\Filament\Layouts\PublicationLayout\Tables;
 
 use Filament\Resources\Table;
 use Filament\Tables\Actions\DeleteBulkAction;
