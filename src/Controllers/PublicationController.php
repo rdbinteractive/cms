@@ -1,9 +1,9 @@
 <?php
 
-namespace RDBI\CMS;
+namespace RDBI\CMS\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\View\View;
+use RDBI\CMS\PublicationViewService;
 
 class PublicationController extends Controller
 {

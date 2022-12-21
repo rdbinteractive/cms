@@ -19,7 +19,7 @@ class CMSServiceProvider extends ServiceProvider
 
         // Controller
         $this->app->make(
-            'RDBI\CMS\PublicationController'
+            'RDBI\CMS\Controllers\PublicationController'
         );
 
         // Migrations
@@ -55,7 +55,7 @@ class CMSServiceProvider extends ServiceProvider
         ], 'rdbi-config');
 
         $this->publishes([
-            __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),        
+            __DIR__.'/Seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
         ], 'rdbi-dev-seeds');
 
         $this->publishes([

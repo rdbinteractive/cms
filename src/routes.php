@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use RDBI\CMS\PublicationController;
+use RDBI\CMS\Controllers\PublicationController;
 
 /*
 |--------------------------------------------------------------------------
