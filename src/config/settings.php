@@ -7,7 +7,7 @@ return [
      * put them (manually) here.
      */
     'settings' => [
-        RDBI\CMS\Settings\GlobalSettings::class
+        RDBI\CMS\Settings\GeneralSettings::class
     ],
 
     /*

@@ -4,12 +4,12 @@ namespace RDBI\CMS\Settings;
 
 use Spatie\LaravelSettings\Settings;
 
-class GlobalSettings extends Settings
+class GeneralSettings extends Settings
 {
     public string $site_name;
 
     public static function group(): string
     {
-        return 'global';
+        return 'general';
     }
 }
