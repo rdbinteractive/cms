@@ -5,7 +5,7 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use function PHPUnit\Framework\assertEmpty;
 
-class ApplicationScaffoldedCorrectlyTest extends TestCase
+class BaseTest extends TestCase
 {
     /**
      * @test

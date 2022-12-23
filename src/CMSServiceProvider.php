@@ -49,6 +49,7 @@ class CMSServiceProvider extends ServiceProvider
             __DIR__.'/Models/User.php' => app_path('Models/User.php'),
             __DIR__.'/config/filament.php' => config_path('filament.php'),
             __DIR__.'/config/settings.php' => config_path('settings.php'),
+            __DIR__.'/Tests/Feature/ApplicationScaffoldedCorrectlyTest.php' => base_path('tests/Feature/ApplicationScaffoldedCorrectlyTest.php'),
         ], 'rdbi-config');
 
         /**
