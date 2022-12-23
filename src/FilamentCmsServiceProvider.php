@@ -21,6 +21,7 @@ class FilamentCmsServiceProvider extends PluginServiceProvider
         PublicationTypeResource::class
     ];
 
+
     public function configurePackage(Package $package): void
     {
         $package->name('laravel-cms');
