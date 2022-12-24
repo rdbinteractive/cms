@@ -8,6 +8,8 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
 use RDBI\CMS\Filament\Resources\CategoryResource\Pages;
 use RDBI\CMS\Filament\Resources\CategoryResource\RelationManagers;
+use RDBI\CMS\Filament\Resources\PublicationResource\RelationManagers\CategoriesRelationManager;
+use RDBI\CMS\Filament\Resources\PublicationTypeResource\RelationManagers\PublicationsRelationManager;
 use RDBI\CMS\Models\Category;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -59,7 +61,7 @@ class CategoryResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            //PublicationsRelationManager::class,
         ];
     }
 

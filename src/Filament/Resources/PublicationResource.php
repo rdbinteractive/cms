@@ -4,6 +4,7 @@ namespace RDBI\CMS\Filament\Resources;
 
 use RDBI\CMS\FIlament\Layouts\PublicationLayout\Forms\PublicationEditForm;
 use RDBI\CMS\FIlament\Layouts\PublicationLayout\Tables\PublicationIndex;
+use RDBI\CMS\Filament\Resources\PublicationResource\RelationManagers\CategoriesRelationManager;
 use RDBI\CMS\Models\Publication;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -32,7 +33,7 @@ class PublicationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            CategoriesRelationManager::class
         ];
     }
 
