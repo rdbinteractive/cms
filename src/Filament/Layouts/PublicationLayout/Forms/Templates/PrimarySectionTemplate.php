@@ -40,10 +40,6 @@ class PrimarySectionTemplate
                             ])->columnSpan(2),
                         Grid::make(1)
                             ->schema([
-                                Select::make('publication_type_id')
-                                    ->label('Type')
-                                    ->options(PublicationType::all()->pluck('name', 'id'))
-                                    ->reactive(),
                                 SpatieMediaLibraryFileUpload::make('primary')
                                     ->label('Primary Image')
                                     ->collection('pages')
