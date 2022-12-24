@@ -4,7 +4,6 @@ namespace RDBI\CMS;
 
 use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Str;
 
 class CMSServiceProvider extends ServiceProvider
 {
@@ -60,7 +59,7 @@ class CMSServiceProvider extends ServiceProvider
             __DIR__ . '/Filament/Pages/Settings.php'
             => app_path('Filament/Pages/Settings.php'),
             __DIR__ . '/database/settings/_create_general_settings.stub'
-            => database_path('settings/' . Str::slug(Carbon::now()) . '_create_general_settings.php'),
+            => database_path('settings/' . date('Y_m_d_His', time()) . '_create_general_settings.php'),
             __DIR__ . '/Tests/Feature/ApplicationScaffoldedCorrectlyTest.php'
             => base_path('tests/Feature/ApplicationScaffoldedCorrectlyTest.php'),
         ], 'rdbi-config');
