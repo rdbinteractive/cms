@@ -2,6 +2,7 @@
 
 namespace RDBI\CMS;
 
+use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
 
 class CMSServiceProvider extends ServiceProvider
@@ -24,8 +25,7 @@ class CMSServiceProvider extends ServiceProvider
 
         // Migrations
         $this->loadMigrationsFrom([
-            __DIR__ . '/database/migrations',
-            __DIR__ . '/database/settings',
+            __DIR__ . '/database/migrations'
         ]);
 
         // Views
@@ -58,6 +58,8 @@ class CMSServiceProvider extends ServiceProvider
             => config_path('settings.php'),
             __DIR__ . '/Filament/Pages/Settings.php'
             => app_path('Filament/Pages/Settings.php'),
+            __DIR__ . '/database/settings/_create_general_settings.php'
+            => database_path('settings/' . Carbon::now() . '_create_general_settings.php'),
             __DIR__ . '/Tests/Feature/ApplicationScaffoldedCorrectlyTest.php'
             => base_path('tests/Feature/ApplicationScaffoldedCorrectlyTest.php'),
         ], 'rdbi-config');
