@@ -33,7 +33,7 @@ class PublicationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            CategoriesRelationManager::class
+            // CategoriesRelationManager::class
         ];
     }
 
