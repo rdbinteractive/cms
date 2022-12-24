@@ -33,9 +33,9 @@ class Publication extends Model implements HasMedia
         return $this->belongsTo(PublicationType::class);
     }
 
-    public function tags()
+    public function tags(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        //return $this->belongsToMany(Tag::class)
+        return $this->belongsToMany(Category::class);
     }
 
     protected static function newFactory(): PublicationFactory
