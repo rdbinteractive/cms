@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('publication_category', function (Blueprint $table) {
+        Schema::create('category_publication', function (Blueprint $table) {
             $table->foreignId('publication_id')->constrained();
             $table->foreignId('category_id')->constrained();
         });
