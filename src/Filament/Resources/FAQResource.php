@@ -55,7 +55,7 @@ class FAQResource extends Resource
     {
         return [
             'index' => Pages\ListFAQs::route('/'),
-            'create' => Pages\CreateFrequentlyAskedQuestion::route('/create'),
+            'create' => Pages\CreateFAQ::route('/create'),
             'edit' => Pages\EditFAQ::route('/{record}/edit'),
         ];
     }
