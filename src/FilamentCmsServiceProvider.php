@@ -24,7 +24,6 @@ class FilamentCmsServiceProvider extends PluginServiceProvider
         PublicationResource::class,
         PublicationTypeResource::class,
         CategoryResource::class,
-        FAQResource::class
     ];
 
 
