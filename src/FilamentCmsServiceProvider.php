@@ -4,6 +4,7 @@ namespace RDBI\CMS;
 
 use Filament\PluginServiceProvider;
 use RDBI\CMS\Filament\Resources\CategoryResource;
+use RDBI\CMS\Filament\Resources\FAQResource;
 use RDBI\CMS\Filament\Resources\PublicationResource;
 use RDBI\CMS\Filament\Resources\PublicationResource\RelationManagers\CategoriesRelationManager;
 use RDBI\CMS\Filament\Resources\PublicationTypeResource;
@@ -22,7 +23,8 @@ class FilamentCmsServiceProvider extends PluginServiceProvider
     protected array $resources = [
         PublicationResource::class,
         PublicationTypeResource::class,
-        CategoryResource::class
+        CategoryResource::class,
+        FAQResource::class
     ];
 
 
