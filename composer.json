@@ -1,7 +1,7 @@
 {
   "name": "rdbi/laravel-cms",
   "description": "RDBI Laravel CMS Boilerplate",
-  "version": "0.0.41@alpha",
+  "version": "0.0.42@alpha",
   "require": {
     "php": "^8.0.0",
     "filament/filament": "^2.0",
